@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CART AND TRASH</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <meta name="description" content="Esto rd un ticket">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style/tiket.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    </head>
+    <body>
+        
+        <script src="script.js" async defer></script>
+
+        <div class="formulario">
+            <form id="form">
+                <div class="field">
+                    <label for="emailjs_email">Ponga se correo</label>
+                    <input type="text" name="emailjs_email" id="emailjs_email">
+                </div>
+                <input type="button" id="button" value="Comprar">
+            </form>
+        </div>
+
+        <div id="showScroll" class="container">
+            <div class="receipt">
+                <h1 class="logo"><img src="../images/favicon.ico" style="max-width:200px;max-height: 250px;"></h1>
+                <div class="address">CART AND TRASH<br>MERR730630DU6<br>Whatsapp 6563336307<br>Av.de Playamar, 13 952 38 39 52</div>
+                <div class="transactionDetails" style="display:none;">
+                    <div class="detail">Reg#17</div>
+                    <div class="detail">TRN#1313</div>
+                    <div class="detail">CSHR#00097655</div>
+                    <div class="detail">str#9852</div>
+                </div>
+                <div class="transactionDetails">
+                    Le atendio: Manolo Gónzalez
+                </div>
+
+                <div class="paymentDetails bold">
+                    <div class="detail">Productos:</div>
+                </div>
+
+                <div class="transactionDetails">
+                    <div class="detail"><div id = "productos"> </div></div>
+                </div>
+                <div class="paymentDetails bold">
+                    <div class="detail">Total:</div>
+                    <div id ="totalPrecio"></div>
+                </div>
+                
+                <div class="returnPolicy bold" style="font-size:90%;">
+                    Es indispensable presentar este comprobante para recoger equipo. 
+                    <br>
+                    Despues de 30 dias no nos hacemos responsables por equipos no reclamados. 
+                    <br>
+                    La garantia aplica en reparaciones con una vigencia de 30 dias naturales y se aplica presentando este comprobante o el ticket fisico. <br>Quejas o sugerencias en https://CART AND TRASH/quejas		
+                </div>
+
+                <div class="feedback">
+
+                    <div class="break">
+                        *****************************
+                    </div>
+
+                    <p class="center">
+                        Este es unicamente un ticket electronico que se podra utilizar como remplazo en caso de perdida total o parcial del ticket 
+                        fisico, este ticket no presenta la misma informacion del ticket fisico por lo que en ciertas ocasiones 
+                        se requerira el ticket fisico.
+                    </p>
+
+                    <h4 class="web">www.CART AND TRASH.com</h4>
+
+                    <div class="break">
+                        *****************************
+                    </div>
+                </div>
+                <div id="coupons" class="coupons">
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CART AND TRASH</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style/indexCss.css">
+    </head>
+    <header>
+        <busqueda>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/favicon.ico">
+                    <a href="index.html"></a>
+                    <h1>CART AND TRASH</h1>
+                </a>
+            </div>
+            
+            <div class="busqueda-items">
+                <input type="text" id="bucador" placeholder="Buscar Carta..." oninput="buscarCartas()">
+                <a href="tiket/tiket.html" class="carrito" target="_blank">
+                    <img src="images/svg.png" alt="Carrito" onclick="mandar()">
+                    <div class="compras" id="comprasId">0</div>
+                </a>
+            </div>
+        </busqueda> 
+    </header>
+    <body>
+        <div id="cartas"></div>
+
+        <div class="">
+            <button id="prev" class="botones" onclick="cambiarPagina(-1)">Anterior</button>
+            <button id="next" class="botones" onclick="cambiarPagina(1)">Siguiente</button>
+        </div>
+
+        <script src="script.js" async defer></script>
+
+    </body>
+</html>
