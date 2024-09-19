@@ -1,0 +1,142 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    width: 96%;
+    display: flex;
+    justify-content: center;
+}
+
+busqueda {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 1vw;
+}
+
+.logo img {
+    height: 4vw;
+    width: auto;
+    margin-left: 4vw;
+}
+
+.busqueda-items {
+    display: flex;
+    align-items: center;
+}
+
+.busqueda-items input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin-right: 1vw;
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #e0e0e0;
+
+}
+
+.carrito {
+    position: relative;
+    display: inline-block;
+}
+
+.compras {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(76, 144, 12);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busqueda-items .carrito img {
+    height: 40px;
+    width: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(121, 121, 121, 0.5);
+    max-width: calc(100vw / 6);
+    background-color: rgba(44, 44, 44, 0.8);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1vw;
+    border-radius: 15px;
+}
+
+.card button {
+    border: none;
+    padding: 12px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(57, 56, 56, 0.8);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: auto;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+#cartas {
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow-y: auto;
+    padding: 1vh;
+    margin-left: 4vw;
+}
+
+.card h2, .card h3,.card p {
+    margin: 1vh 0;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5%;
+    height: auto;
+    margin-bottom: 1vh;
+}
+
+.botones {
+    padding: 1.3vh 2vw;
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: 1vh;
+    margin-left: 26.6vw;
+}
+.botones:hover {
+    background-color: #333;
+  }
